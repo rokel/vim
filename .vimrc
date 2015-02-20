@@ -1,4 +1,7 @@
 set nocp
+" Allow per-dir vimrc files
+set exrc
+set secure
 filetype plugin on
 let mapleader=","
 execute pathogen#infect()

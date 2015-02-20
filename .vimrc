@@ -18,7 +18,6 @@ set diffopt=vertical
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_c_check_header=1
-map <C-n> :NERDTreeToggle<CR>
 
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1

@@ -3,6 +3,7 @@ set nocp
 set exrc
 set secure
 filetype plugin on
+set omnifunc=syntaxcomplete#Complete
 let mapleader=","
 execute pathogen#infect()
 syntax on
@@ -27,6 +28,10 @@ let g:syntastic_c_check_header=1
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
+
+" supertab
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabContextDefaultCompletionType = "<c-n>"
 
 " Move to the next buffer
 nmap <leader>l :bnext<CR>

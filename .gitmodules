@@ -34,3 +34,6 @@
 [submodule "bundle/OmniCppComplete"]
 	path = bundle/OmniCppComplete
 	url = https://github.com/FromtonRouge/OmniCppComplete.git
+[submodule "bundle/splitjoin.vim"]
+	path = bundle/splitjoin.vim
+	url = https://github.com/AndrewRadev/splitjoin.vim.git

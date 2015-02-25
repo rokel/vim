@@ -4,6 +4,7 @@ set exrc
 set secure
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
+set completeopt-=preview
 let mapleader="\<Space>"
 execute pathogen#infect()
 syntax on
@@ -41,3 +42,5 @@ nmap <leader>h :bprevious<CR>
 nnoremap <Leader><Leader>w :w<CR>
 
 map <Leader> <Plug>(easymotion-prefix)
+
+map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>

@@ -55,3 +55,9 @@ omap / <Plug>(easymotion-tn)
 " different highlight method and have some other features )
 map  n <Plug>(easymotion-next)
 map  N <Plug>(easymotion-prev)
+
+" open quickfix after grep
+autocmd QuickFixCmdPost *grep* cwindow
+
+" git grep word under cursor
+nnoremap gr :silent Ggrep <cword> <bar> redraw! <CR>

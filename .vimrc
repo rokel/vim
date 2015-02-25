@@ -4,7 +4,7 @@ set exrc
 set secure
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-let mapleader=","
+let mapleader="\<Space>"
 execute pathogen#infect()
 syntax on
 set background=dark
@@ -37,5 +37,7 @@ let g:SuperTabContextDefaultCompletionType = "<c-n>"
 nmap <leader>l :bnext<CR>
 " Move to the previous buffer
 nmap <leader>h :bprevious<CR>
+" Save file
+nnoremap <Leader><Leader>w :w<CR>
 
 map <Leader> <Plug>(easymotion-prefix)

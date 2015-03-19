@@ -11,10 +11,14 @@ syntax on
 set background=dark
 colorscheme solarized
 highlight clear SignColumn
-let &t_ti.="\e[1 q"
-let &t_SI.="\e[5 q"
-let &t_EI.="\e[1 q"
-let &t_te.="\e[0 q"
+
+" let &t_ti.="\e[1 q"
+" let &t_SI.="\e[5 q"
+" let &t_EI.="\e[1 q"
+" let &t_te.="\e[0 q"
+
+let g:airline_powerline_fonts = 1
+
 let g:netrw_silent = 1
 set cindent
 set tabstop=4

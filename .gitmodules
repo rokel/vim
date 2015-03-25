@@ -43,3 +43,9 @@
 [submodule "bundle/vim-tmux-navigator"]
 	path = bundle/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
+[submodule "bundle/vim-misc"]
+	path = bundle/vim-misc
+	url = https://github.com/xolox/vim-misc.git
+[submodule "bundle/vim-easytags"]
+	path = bundle/vim-easytags
+	url = https://github.com/xolox/vim-easytags.git

@@ -6,6 +6,7 @@ filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview
 let mapleader="\<Space>"
+inoremap jk <Esc>
 execute pathogen#infect()
 syntax on
 set background=dark

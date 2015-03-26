@@ -1,3 +1,7 @@
+if &shell =~# 'fish$'
+    set shell=bash
+endif
+
 set nocp
 " Allow per-dir vimrc files
 set exrc

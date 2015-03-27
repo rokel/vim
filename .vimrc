@@ -36,10 +36,6 @@ let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
 let g:airline#extensions#tabline#fnamemod = ':t'
 
-" supertab
-let g:SuperTabDefaultCompletionType = "context"
-let g:SuperTabContextDefaultCompletionType = "<c-n>"
-
 " Move to the next buffer
 nmap <leader>l :bnext<CR>
 " Move to the previous buffer
@@ -50,6 +46,8 @@ nnoremap <Leader><Leader>w :w<CR>
 map <Leader> <Plug>(easymotion-prefix)
 
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+
+let g:UltiSnipsExpandTrigger="<c-z>"
 
 let g:pathogen_disabled = []
 

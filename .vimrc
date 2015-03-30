@@ -45,7 +45,9 @@ nnoremap <Leader><Leader>w :w<CR>
 
 map <Leader> <Plug>(easymotion-prefix)
 
-map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaSl --extra=+q .<CR>
+
+let g:ycm_collect_identifiers_from_tags_files = 1 
 
 let g:UltiSnipsExpandTrigger="<c-z>"
 
@@ -71,3 +73,6 @@ autocmd QuickFixCmdPost *grep* cwindow
 
 " git grep word under cursor
 nnoremap gr :silent Ggrep <cword> <bar> redraw! <CR>
+
+" recognise .md as markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown

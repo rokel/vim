@@ -34,7 +34,7 @@ let g:syntastic_c_check_header=1
 set tw=79
 set colorcolumn=+1
 " Artistic Style 
-let g:formatprg_args_expr_cpp = '"--mode=c --style=google -pcjH -fxd -xC79 -".(&expandtab ? "s".&shiftwidth : "t")'
+let g:formatprg_args_expr_cpp = '"--mode=c --style=google -pcjH -FU --max-code-length=79 -".(&expandtab ? "s".&shiftwidth : "t")'
 noremap <F3> :Autoformat<CR><CR>
 
 " Enable the list of buffers

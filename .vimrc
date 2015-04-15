@@ -31,6 +31,12 @@ let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_c_check_header=1
 
+set tw=79
+set colorcolumn=+1
+" Artistic Style 
+let g:formatprg_args_expr_cpp = '"--mode=c --style=google -pcjH -fxd -xC79 -".(&expandtab ? "s".&shiftwidth : "t")'
+noremap <F3> :Autoformat<CR><CR>
+
 " Enable the list of buffers
 let g:airline#extensions#tabline#enabled = 1
 " Show just the filename
@@ -75,4 +81,4 @@ autocmd QuickFixCmdPost *grep* cwindow
 nnoremap gr :silent Ggrep <cword> <bar> redraw! <CR>
 
 " recognise .md as markdown
-autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufNewFile,BufReadPost *.md setlocal filetype=markdown tw=79 spell complete+=kspell nocindent

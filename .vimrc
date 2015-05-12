@@ -6,6 +6,8 @@ set nocp
 " Allow per-dir vimrc files
 set exrc
 set secure
+" enable mouse FFS
+set mouse=a
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
 set completeopt-=preview

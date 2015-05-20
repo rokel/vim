@@ -84,3 +84,6 @@ nnoremap gr :silent Ggrep <cword> <bar> redraw! <CR>
 
 " recognise .md as markdown
 autocmd BufNewFile,BufReadPost *.md setlocal filetype=markdown tw=79 spell complete+=kspell nocindent
+
+" c++ comments - use //
+autocmd FileType cpp set commentstring=//\ %s 

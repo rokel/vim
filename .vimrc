@@ -55,6 +55,9 @@ map <Leader> <Plug>(easymotion-prefix)
 
 map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaSl --extra=+q .<CR>
 
+" voodoo to switch between header and source files
+map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+
 let g:ycm_collect_identifiers_from_tags_files = 1 
 
 let g:UltiSnipsExpandTrigger="<c-z>"

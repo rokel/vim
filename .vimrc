@@ -57,6 +57,9 @@ map <C-F12> :!ctags -R --c++-kinds=+p --fields=+iaSl --extra=+q .<CR>
 
 " voodoo to switch between header and source files
 map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
+" MARTe build
+map <F5> :Make -f Makefile.linux -s all<CR>
+map <F6> :Make -f Makefile.linux -s clean all<CR>
 
 let g:ycm_collect_identifiers_from_tags_files = 1 
 

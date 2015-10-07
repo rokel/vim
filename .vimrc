@@ -32,11 +32,13 @@ set diffopt=vertical
 let g:syntastic_check_on_open=1
 let g:syntastic_enable_signs=1
 let g:syntastic_c_check_header=1
+let g:syntastic_java_javac_config_file_enabled=1
 
 set tw=79
 set colorcolumn=+1
 " Artistic Style 
-let g:formatprg_args_expr_cpp = '"--mode=c --style=google -pcjHFUS --max-code-length=79 -".(&expandtab ? "s".&shiftwidth : "t")'
+let g:formatprg_args_expr_cpp = '"--mode=c --style=kr -pcjHFUS --max-code-length=79 -".(&expandtab ? "s".&shiftwidth : "t")'
+let g:formatprg_args_expr_java = '"--style=kr -pcjHFUS --max-code-length=79 -".(&expandtab ? "s".&shiftwidth : "t")'
 noremap <F3> :Autoformat<CR><CR>
 
 " Enable the list of buffers
@@ -90,7 +92,7 @@ autocmd QuickFixCmdPost *grep* cwindow
 nnoremap gr :silent Ggrep <cword> <bar> redraw! <CR>
 
 " recognise .md as markdown
-autocmd BufNewFile,BufReadPost *.md setlocal filetype=markdown tw=79 spell complete+=kspell nocindent
+autocmd BufNewFile,BufReadPost *.md setlocal filetype=markdown.pandoc tw=79 fo+=t spell complete+=kspell nocindent
 
 " c++ comments - use //
 autocmd FileType cpp set commentstring=//\ %s 
